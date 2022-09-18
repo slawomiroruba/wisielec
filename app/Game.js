@@ -53,7 +53,7 @@ class Game {
         this.polishLetters.forEach((letter) => {
             const button = document.createElement('button');
             button.innerText = letter;
-            button.classList.add('bg-black', 'text-white', 'px-2', 'md:px-8', 'md:py-1', 'disabled:opacity-50');
+            button.classList.add('bg-black', 'text-white', 'p-4', 'md:p-8', 'disabled:opacity-50');
             button.addEventListener('click', (event) => {
                 console.log(letter);
                 this.guess(letter, event)
