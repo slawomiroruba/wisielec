@@ -97,6 +97,10 @@ const game = new Game({
 
 game.start();
 
-document.addEventListener('keyup', e => {
-    game.guess(e.key, null)
+window.addEventListener('load', function(){
+    this.setTimeout(function(){
+        document.addEventListener('keyup', e => {
+            game.guess(e.key, null)
+        })
+    }, 1000)
 })

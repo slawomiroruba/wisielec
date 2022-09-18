@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: transparent;
+  }
+
+*::selection {
+    color: black;
+    background: transparent;
+  }
+
+body {
+    caret-color: transparent;
+}

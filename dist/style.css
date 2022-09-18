@@ -666,6 +666,21 @@ video {
   opacity: 0.25;
 }
 
+*::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: transparent;
+}
+
+*::selection {
+  color: black;
+  background: transparent;
+}
+
+body {
+  caret-color: transparent;
+}
+
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
 }
