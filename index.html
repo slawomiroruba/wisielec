@@ -8,12 +8,39 @@
     <title>Wisielec</title>
 </head>
 <body>
-    <section id="hangman">
-        <div id="output"></div>
-        <div id="word"></div>
-        <div id="category"></div>
-        <div id="letters" class="flex flex-wrap gap-4 px-16 my-8 justify-center"></div>
+    <h1 class="text-center text-2xl md:text-4xl pt-8">Wisielec</h1>
+    <section id="hangman" class="px-4">
+        <div id="output" class="grid grid-cols-8 gap-1 md:gap-4 py-8">
+            <div class="opacity-25">
+                <img src="./images/1.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/2.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/3.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/4.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/5.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/6.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/7.png">
+            </div>
+            <div class="opacity-25">
+                <img src="./images/8.png">
+            </div>
+        </div>
+        <div id="word" class="mx-auto border-2 border-black w-full md:w-3/4 xl:w-1/2 p-8 font-mono tracking-widest text-center text-4xl">___ ___ ___</div>
+        <div id="category" class="text-center text-2xl py-4 md:py-12"></div>
+        <div id="letters" class="flex flex-wrap gap-1 md:gap-4 px-4 md:px-16 my-2 md:my-8 justify-center"></div>
     </section>
-    <script src="./app/Game.js"></script>
+    <script src="./app/Game.js" type="module"></script>
+    <!-- <script src="./app/Sheet.js"></script> -->
 </body>
 </html>
